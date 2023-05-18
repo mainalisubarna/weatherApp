@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast - Made in Nepal</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://openweathermap.org/themes/openweathermap/assets/vendor/owm/img/icons/logo_60x60.png" type="image/x-icon">
+</head>
+
+<body>
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-8 col-lg-6 col-xl-4">
+
+                    <h3 class="mb-4 pb-2 fw-normal">Check the weather forecast</h3>
+
+                    <div class="input-group rounded mb-3">
+                        <input type="search" id="location" class="form-control rounded" placeholder="City"
+                            aria-label="Search" aria-describedby="search-addon" required />
+                        <a href="#" type="button" id="check">
+                            <span class="input-group-text border-0 fw-bold" id="search-addon">
+                                Check!
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="mb-4 pb-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="celsius" checked />
+                            <label class="form-check-label" for="inlineRadio1">Celsius</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="fahrenheit" />
+                            <label class="form-check-label" for="inlineRadio2">Farenheit</label>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-0 border" id="main-content">
+                        <div class="card-body p-4" id="cardBody">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(227, 220, 220, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark" href="https://subarnamainali.com.np/">Subarna Mainali</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+   
+    <script src="./main.js" type="text/javascript"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- MDB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"></script>
+</body>
+
+</html>
